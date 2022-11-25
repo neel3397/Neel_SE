@@ -1,0 +1,19 @@
+Q.1 what is software? what is software engineering?
+ans:- A set of program is called as software.
+software engineering is systematic engineering approach to softare development. a software engineer is a person who applies the principal of software engineering
+to design, develop, maintain, test and evaluate computer software.
+
+Q.2 explain types of software
+ans:- there are 2 parts
+1.system software:-windows as o.s. in pc and android is o.s. in mobile.
+2.application software:- amaon, flipkart, instagram, paytm, gpay, snapchat
+
+Q.3 what is SDCL? explain each face of SDCL
+ans:-SDCL is software development life cycle
+1.requirement
+2.analysis
+3.designing
+4.development
+5.testing
+6.deployment
+7.maintanance
