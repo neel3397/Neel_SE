@@ -1,6 +1,7 @@
 #include<stdio.h>
 
 void main()
+
 {
 	int age;
 	char name[15];
