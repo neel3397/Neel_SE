@@ -1,26 +1,31 @@
 #include<stdio.h>
-int maximum(int []);
+void max(int arr1[],int length)
+{
+	int i;
+	int max=arr1[0];
+	
+	for(i=0;i<7;i++)
+	{
+		printf("d\t",arr1[i]);
+		
+		if(arr1[i]>max)
+		{
+		max=arr1[i];
+		}
+	}
+}
+
 void main()
 {
-	int a[10],i,m;
-	printf("\nenter 10 numbers");
-	for(i=0;i<10;i++)
-	scanf("%d",&a[i]);
-	
-	m=maximum(a);
-	printf("\nmaximum=%d",m);
-	return 0;
-	
+int arr1[10];
+int i;
+int length=sizeof(arr1)/sizeof(arr1[0]);
 
-
-}
-int maximun(int a[])
+for(i=0;i<length;i++)
 {
-	int i,m=32768;
-	for(i=0;i<10;i++)
-	{
-		if(a[i]>m)
-		m=a[i];
-	}
-	return m;
+	printf("\enter element %d:",i);
+	scanf("%d",&arr1[i]);
+}
+printf("\n\n\n");
+max(arr1,length);
 }
