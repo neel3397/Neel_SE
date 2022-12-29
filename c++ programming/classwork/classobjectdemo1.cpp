@@ -12,8 +12,10 @@ class student
 		{
 			cout<<"\enter sid:";
 			cin>>sid;
+			fflush(stdin);
 			cout<<"\enter name:";
-			cin>>name;
+		//	cin>>name;
+		getline(cin,name);
 			cout<<"\enter marks:";
 			cin>>marks;
 		}
