@@ -75,7 +75,7 @@ class result:public test
 				cout<<"total="<<total<<endl;
 			}
 			
-			Void main()
+			int main()
 			{
 			result student;
 			student.get_number(800);
