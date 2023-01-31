@@ -2,51 +2,36 @@
 #include<string.h>
 using namespace std;
 
-class String
+class addstring
 {
 	public:
-		char str[20];
-		public:
-		void accept_string()
+		char str[100];
+		void input()
 		{
-			cout<<"\nenter string      :";
-			cin>>str;
-		}
-		void display_string()
-		{
-		cout<<str;
+			cout<<"\n\t enter your string :";
+			cin . getline(str,100);
 		}
 		
-		string operator+(string x)
+		void display()
 		{
-		String s;
-		strcat(x.str,str);
-		strcpy(s.str,str);
-		return s;
-	}
+			cout<<"\n\t concatenate string :"<<str;
+		}
+		
+		addstring operator+(addstring s)
+		{
+			addstring o;
+    		strcat(str,s.str);
+			strcpy(o.str,str);
+			return o;
+		}	
 };
+
 int main()
 {
-	
-	 String str1,str2,str3;
-	
-	str1.accept_string();
-	str2.accept_string();
-	
-	
-	cout<<"\n------------------------------------";
-	cout<<"\n\nfirst string is  :";
-	str1.display_string();
-	
-	cout<<"\n\nsecond string is  :";
-	str2.display_string();
-	
-	
-	
-	cout<<"\n-------------------------------------";
-	str3=str1+str2;
-	
-	cout<<"\n\nconcatenated string is:";
-	str.display_string();
+	addstring s1,s2,s3;
+	s1.input();
+	s2.input();
+	s3 = s1+s2;
+	s3.display();
 	return 0;
 }
