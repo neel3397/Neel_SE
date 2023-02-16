@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<a href="imgdemo.html">Go Back to Home Page</a>
+<hr>
+
+<div style="border:1px solid grey;width:500px;height:500px;margin-left: 30%;background-color: lightgrey">
+	<h1 align="center">Register With Us.</h1>
+	<hr>
+<form name="register" method="post" action="login.html">
+	<table align="center">
+		<tr class="table-success">>
+			<td>First Name : </td>
+			<td><input type="text" name="fname" required placeholder="Enter First Name"></td>
+		</tr>
+
+		<tr>
+			<td>Last Name : </td>
+			<td><input type="text" name="lname" required></td>
+		</tr>
+
+		<tr>
+			<td>Email : </td>
+			<td><input type="email" name="email" required></td>
+		</tr>
+		<tr>
+			<td>Mobile : </td>
+			<td><input type="text" name="mobile" required> </td>
+		</tr>
+		<tr>
+			<td>Password : </td>
+			<td><input type="password" name="password" required></td>
+		</tr>
+		<tr>
+			<td>Confirm Password : </td>
+			<td><input type="password" name="cpassword" required></td>
+		</tr>
+		<tr>
+			<td>Gender : </td>
+			<td>
+				<input type="radio" name="gender" value="male">Male
+				<input type="radio" name="gender" value="Female">Female
+			</td>
+		</tr>
+		<tr>
+			<td>Hobbies : </td>
+			<td>
+				<input type="checkbox" name="hobby" value="cricket">Cricket
+				<input type="checkbox" name="hobby" value="football">Football
+				<input type="checkbox" name="hobby" value="swimming">Swimming
+				<input type="checkbox" name="hobby" value="hockey">Hockey
+			</td>
+		</tr>
+		<tr>
+			<td>Education Qualification : </td>
+			<td>
+				<select>
+					<option><----Select---></option>
+					<option>SSC</option>
+					<option>HSC</option>
+					<option>Graduation</option>
+					<option>Post Graduation</option>
+					<option>PHD</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr>
+			<td>Address : </td>
+			<td>
+				<textarea rows="5" cols="25" name="address"></textarea>
+			</td>
+
+		</tr>
+
+
+		<tr>
+			<td></td>
+			<td><input type="submit" name="action" class="btn btn-success"></td>
+		</tr>
+
+
+
+	</table>
+</form>	
+
+</div>
+</body>
+</html>
