@@ -1,0 +1,34 @@
+CREATE TABLE worker
+(
+worker_id int(100)PRIMARY KEY AUTO_INCREMENT,
+f_name varchar(100),
+l_name varchar(100),
+salary varchar(100),
+joiningdate varchar(100),
+department varchar(100)
+)
+
+
+
+CREATE TABLE bonus
+(
+worker_ref_id int(100),
+FOREIGN KEY(worker_ref_id)REFERENCES worker(worker_id),
+bonus_date varchar(100),
+bonus_amount varchar(100)
+)
+
+
+INSERT INTO `bonus` (`worker_ref_id`, `bonus_date`, `bonus_amount`) VALUES ('1', '03-03-2015', '2000'), ('2', '04-04-2016', '5000');
+
+
+
+CREATE TABLE title
+(
+worker_ref_id int(100),
+FOREIGN KEY(worker_ref_id)REFERENCES worker(worker_id),
+worker_title varchar(100),
+affected_from varchar(100)
+)
+
+INSERT INTO `title` (`worker_ref_id`, `worker_title`, `affected_from`) VALUES ('1', 'manager', '05-05-2013'), ('2', 'director', '02-02-2014');

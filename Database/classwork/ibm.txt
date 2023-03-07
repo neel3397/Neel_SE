@@ -1,0 +1,8 @@
+INSERT INTO `employee` (`employee_id`, `first_name`, `last_name`, `salary`, `joining_date`, `department`) VALUES (NULL, 'john', 'abraham', '1000000', '01-jan-13\r\n    12.00.00\r\n       am', 'banking'), (NULL, 'micheal', 'clarke', '800000', '01-jan-13\r\n  12.00.00\r\n     am', 'insurance'), (NULL, 'roy', 'thomas', '700000', '01-feb-13\r\n  12.00.00\r\n    am', 'banking'), (NULL, 'tom', 'jose', '600000', '01-feb-13\r\n   12.00.00\r\n      am', 'insurance'), (NULL, 'jerry', 'pinto', '650000', '01-feb-13\r\n   12.00.00\r\n      am', 'insurance'), (NULL, 'philip', 'mathew', '750000', '01-jan-13\r\n   12.00.00\r\n     am', 'services'), (NULL, 'testname1', '123', '650000', '01-jan-13\r\n 12.00.00\r\n    am', 'services'), (NULL, 'testname2', 'lname%', '600000', '01-feb-13\r\n  12.00.00\r\n     am', 'insurance');
+
+
+
+incentive ( employee_ref_id int(100), FOREIGN KEY(employee_ref_id)REFERENCES employee(employee_id), incentive_date varchar(100), incentive_amount varchar(100) );
+
+
+INSERT INTO `incentive` (`employee_ref_id`, `incentive_date`, `incentive_amount`) VALUES ('1', '01-feb-13', '5000'), ('2', '01-feb-13', '3000'), ('3', '01-feb-13', '4000'), ('1', '01-jan-13', '4500'), ('2', '01-jan-13', '3500');

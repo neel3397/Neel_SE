@@ -1,0 +1,2 @@
+INSERT INTO `student` (`std_id`, `std_name`, `std_branch`) VALUES (NULL, 'jay', 'computer science'), (NULL, 'suhani', 'electronic and com'), (NULL, 'kriti', 'electronic and com');
+INSERT INTO `exam` (`exam_rollno`, `exam_s_code`, `exam_marks`, `exam_p_code`, `std_id_fk`) VALUES (NULL, 'cs11', '50', 'cs', '1'), (NULL, 'cs12', '60', 'cs', '1'), (NULL, 'ec101', '66', 'ec', '2'), (NULL, 'ec102', '70', 'ec', '2'), (NULL, 'ec101', '45', 'ec', '3'), (NULL, 'ec102', '50', 'ec', '3');
